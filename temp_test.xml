@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Suite" parallel="tests">
+  <listeners>
+    <listener class-name="com.experitest.auto.EnvReaderListener"/>
+  </listeners>
+  <test thread-count="1" name="IOSDemoTest" parallel="tests">
+    <parameter name="test.config.file" value="IOSDemoTest"/>
+    <classes>
+      <class name="com.experitest.auto.IOSDemoTest"/>
+    </classes>
+  </test> <!-- IOSDemoTest -->
+</suite> <!-- Suite -->
